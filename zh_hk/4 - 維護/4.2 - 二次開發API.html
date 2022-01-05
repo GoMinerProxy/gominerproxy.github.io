@@ -478,7 +478,7 @@
 <p><em>GoMinerProxy &#x7684;API&#x6587;&#x6A94;</em></p>
 <hr>
 <p><strong>&#x63CF;&#x8FF0;&#xFF1A;</strong>&#x767B;&#x9304;</p>
-<p><strong>&#x8ACB;&#x6C42;URL&#xFF1A;</strong><code>http://&lt;domain_name&gt;:&lt;port&gt;/login</code></p>
+<p><strong>&#x8ACB;&#x6C42;URL&#xFF1A;</strong><code>http://&lt;domain_name&gt;:&lt;port&gt;/auth/login</code></p>
 <p><strong>&#x8ACB;&#x6C42;&#x65B9;&#x5F0F;</strong>&#xFF1A;POST</p>
 <p><strong>&#x53C3;&#x6578;&#xFF1A;</strong></p>
 <table>
@@ -1305,6 +1305,108 @@
 </table>
 <p><strong>&#x5099;&#x6CE8;&#xFF1A;</strong>&#x7121;</p>
 <hr>
+<p><strong>&#x63CF;&#x8FF0;&#xFF1A;</strong>&#x555F;&#x52D5;&#x4EE3;&#x7406;&#x6C60;</p>
+<p><strong>&#x8ACB;&#x6C42;URL&#xFF1A;</strong><code>http://&lt;domain_name&gt;:&lt;port&gt;/api/pool/proxy/start?name=&lt;proxy_name&gt;</code></p>
+<p><strong>&#x8ACB;&#x6C42;&#x65B9;&#x5F0F;</strong>&#xFF1A;POST</p>
+<p><strong>Header&#xFF1A;</strong>&#x53EF;&#x4EE5;&#x53C3;&#x8003;<a href="https://learning.postman.com/docs/sending-requests/authorization/#bearer-token" target="_blank">https://learning.postman.com/docs/sending-requests/authorization/#bearer-token</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C3;&#x6578;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9078;</th>
+<th style="text-align:left">&#x985E;&#x578B;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Authorization</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x767B;&#x9304;&#x6642;&#x7372;&#x53D6;&#x7684;token&#xFF0C;&#x586B;&#x5BEB;&#xFF1A;Bearer[&#x7A7A;&#x683C;]Token</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code>{
+    &quot;code&quot;: 0,
+    &quot;error&quot;: null
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x53C3;&#x6578;&#x8AAA;&#x660E;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C3;&#x6578;&#x540D;</th>
+<th style="text-align:left">&#x985E;&#x578B;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">int</td>
+<td>0&#xFF1A;&#x6210;&#x529F;&#xFF1B;1&#xFF1A;&#x5931;&#x6557;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">string</td>
+<td>&#x932F;&#x8AA4;&#x539F;&#x56E0;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5099;&#x6CE8;&#xFF1A;</strong>&#x7121;</p>
+<hr>
+<p><strong>&#x63CF;&#x8FF0;&#xFF1A;</strong>&#x505C;&#x6B62;&#x4EE3;&#x7406;&#x6C60;</p>
+<p><strong>&#x8ACB;&#x6C42;URL&#xFF1A;</strong><code>http://&lt;domain_name&gt;:&lt;port&gt;/api/pool/proxy/stop?name=&lt;proxy_name&gt;</code></p>
+<p><strong>&#x8ACB;&#x6C42;&#x65B9;&#x5F0F;</strong>&#xFF1A;POST</p>
+<p><strong>Header&#xFF1A;</strong>&#x53EF;&#x4EE5;&#x53C3;&#x8003;<a href="https://learning.postman.com/docs/sending-requests/authorization/#bearer-token" target="_blank">https://learning.postman.com/docs/sending-requests/authorization/#bearer-token</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C3;&#x6578;&#x540D;</th>
+<th style="text-align:left">&#x5FC5;&#x9078;</th>
+<th style="text-align:left">&#x985E;&#x578B;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Authorization</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">string</td>
+<td>&#x767B;&#x9304;&#x6642;&#x7372;&#x53D6;&#x7684;token&#xFF0C;&#x586B;&#x5BEB;&#xFF1A;Bearer[&#x7A7A;&#x683C;]Token</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre><code>{
+    &quot;code&quot;: 0,
+    &quot;error&quot;: null
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x53C3;&#x6578;&#x8AAA;&#x660E;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C3;&#x6578;&#x540D;</th>
+<th style="text-align:left">&#x985E;&#x578B;</th>
+<th>&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">code</td>
+<td style="text-align:left">int</td>
+<td>0&#xFF1A;&#x6210;&#x529F;&#xFF1B;1&#xFF1A;&#x5931;&#x6557;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">string</td>
+<td>&#x932F;&#x8AA4;&#x539F;&#x56E0;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5099;&#x6CE8;&#xFF1A;</strong>&#x7121;</p>
+<hr>
 
                                 
                                 </section>
@@ -1344,7 +1446,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.2 - 二次開發API","level":"1.5.2","depth":2,"next":{"title":"其他語言(Other Language)","level":"1.6","depth":1,"ref":"","articles":[{"title":"簡體中文 zh-cn","level":"1.6.1","depth":2,"url":"https://gominerproxy.github.io/zh_cn/","ref":"https://gominerproxy.github.io/zh_cn/","articles":[]},{"title":"繁體中文 zh-hk","level":"1.6.2","depth":2,"url":"https://gominerproxy.github.io/zh_hk/","ref":"https://gominerproxy.github.io/zh_hk/","articles":[]},{"title":"English en-us","level":"1.6.3","depth":2,"url":"https://gominerproxy.github.io/en_us/","ref":"https://gominerproxy.github.io/en_us/","articles":[]}]},"previous":{"title":"4.1 - 更新升級","level":"1.5.1","depth":2,"path":"4 - 維護/4.1 - 更新升級.md","ref":"4 - 維護/4.1 - 更新升級.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4 - 維護/4.2 - 二次開發API.md","mtime":"2022-01-04T12:54:04.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-04T12:54:23.622Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2 - 二次開發API","level":"1.5.2","depth":2,"next":{"title":"其他語言(Other Language)","level":"1.6","depth":1,"ref":"","articles":[{"title":"簡體中文 zh-cn","level":"1.6.1","depth":2,"url":"https://gominerproxy.github.io/zh_cn/","ref":"https://gominerproxy.github.io/zh_cn/","articles":[]},{"title":"繁體中文 zh-hk","level":"1.6.2","depth":2,"url":"https://gominerproxy.github.io/zh_hk/","ref":"https://gominerproxy.github.io/zh_hk/","articles":[]},{"title":"English en-us","level":"1.6.3","depth":2,"url":"https://gominerproxy.github.io/en_us/","ref":"https://gominerproxy.github.io/en_us/","articles":[]}]},"previous":{"title":"4.1 - 更新升級","level":"1.5.1","depth":2,"path":"4 - 維護/4.1 - 更新升級.md","ref":"4 - 維護/4.1 - 更新升級.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4 - 維護/4.2 - 二次開發API.md","mtime":"2022-01-05T13:26:45.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-05T13:26:58.720Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
